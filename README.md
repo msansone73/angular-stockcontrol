@@ -1,0 +1,2 @@
+# angular-stockcontrol
+Site stockcontrol
