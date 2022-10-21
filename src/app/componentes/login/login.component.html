@@ -1,0 +1,34 @@
+<div class="container">
+  <form action="">
+    <div class="formulario">
+      <div class="campo">
+        <div class="form-label">
+          <label for="email">Email:</label>
+        </div>
+        <div class="form-input">
+          <input placeholder="email"
+                [(ngModel)]="this.user.email"
+                [ngModelOptions]="{standalone: true}">
+        </div>
+      </div>
+      <div class="campo">
+        <div class="form-label">
+          <label for="passwors">Senha</label>
+        </div>
+        <div class="form-input">
+          <input placeholder="senha"
+                [(ngModel)]="this.user.password"
+                [ngModelOptions]="{standalone: true}">
+        </div>
+      </div>
+      <div class="botoes">
+        <button class="btn buttonOK" (click)="logar()">LOGAR</button>
+        <button class="btn buttonCancel" (click)="registrar()">REGISTRAR</button>
+      </div>
+      <div class="campo">
+        {{this.user.name}}
+        {{this.user.password}}
+      </div>
+    </div>
+  </form>
+</div>

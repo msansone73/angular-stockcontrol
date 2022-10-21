@@ -1,0 +1,138 @@
+body {
+  background-color:rgb(247, 247, 247);
+  padding-top: 0px;
+  margin: 0px;
+  font-family: 'Roboto Flex';
+
+}
+
+.titulo {
+  color: rgb(57, 57, 57);
+  font-size: larger;
+  font-weight: 600;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: rgb(209, 209, 209);
+  background-color: rgb(234, 234, 234);
+  padding: 3px;
+  text-align: center;
+}
+
+.buttonOK{
+  background-color: rgb(0,200,0);
+}
+
+.buttonCancel{
+  background-color: red;
+}
+
+.buttonBusca{
+  background-color: rgb(0, 183, 255);
+}
+
+.container{
+  border: 1px;
+  border-color: rgb(209, 209, 209);
+  background-color: rgb(234, 234, 234);
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.content{
+  padding-left: 05px;
+  padding-right: 05px;
+  margin: 05px;
+
+}
+
+.formulario{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
+  padding: 1px;
+}
+
+.botoes{
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-end;
+  padding: 1px;
+}
+
+.form-label{
+  display: flex;
+  flex-grow: 1;
+  padding: 1px;
+}
+.form-input{
+  display: flex;
+  flex-grow: 5;
+  padding: 2px;
+}
+.form-filler{
+  display: flex;
+  flex-grow: 16;
+  padding: 2px;
+}
+
+.large{
+  width: 100%;
+}
+
+.btn {
+  border: 19px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: darkgrey;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 6px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+table {
+  width: 100%;
+}
+
+table, th, tr, td{
+  border-collapse: collapse;
+
+  border-style:solid;
+  border-color: black;
+  border-width: 0px;
+  padding: 3px;
+  margin: 0px;
+  text-align: left;
+}
+
+input, select{
+  padding-left: 4px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-width: 1px;
+  border-radius: 6px;
+}
+
+.tabela-cabecalho{
+
+  background-color: rgb(180,180,180);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(200,200,200);
+}

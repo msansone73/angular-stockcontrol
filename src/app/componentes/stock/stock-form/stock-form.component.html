@@ -1,0 +1,53 @@
+<div  class="container"
+      *ngIf="stockId!='0'">
+  <form action="">
+    <div class="formulario">
+      <div class="campo">
+        <div class="form-label">
+          <label for="nome">Ticker</label>
+        </div>
+        <div  class="form-input">
+          <input  placeholder="nome"
+                  [(ngModel)]="this.stock.ticker"
+                  [ngModelOptions]="{standalone: true}">
+        </div>
+        <div  class="form-filler">
+        </div>
+      </div>
+      <div class="campo">
+        <div class="form-label">
+          <label for="nome">Nome</label>
+        </div>
+        <div class="form-input">
+          <input id="nome"
+                  class="large"
+                  placeholder="nome"
+                  [(ngModel)]="this.stock.name"
+                  [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="form-filler">
+        </div>
+      </div>
+      <div class="campo">
+        <div class="form-label">
+          <label for="nome" class="form-label">Tipo</label>
+        </div>
+        <div class="form-input">
+          <select id="tipo" name="tipo"
+            [(ngModel)]="this.stock.stockType">
+            <option value="DEFAULT" selected>DEFAULT</option>
+            <option value="FII">FII</option>
+          </select>
+        </div>
+        <div class="form-filler">
+        </div>
+      </div>
+      <div class="botoes">
+        <button class="btn buttonCancel" (click)="cancelar()">CANCELAR</button>
+        <button class="btn buttonOK" (click)="salvar()">SALVAR</button>
+      </div>
+    </div>
+
+
+  </form>
+</div>

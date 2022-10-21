@@ -1,0 +1,29 @@
+<p>{{menssagem}}</p>
+<p>{{this.atualizarLista}}</p>
+<div>
+  <div>
+    Nome  <input type="text" name="nome" id="nome" [(ngModel)]="nome">
+    <button class="btn buttonBusca" (click)="filtrar()">FILTRAR</button>
+    <button class="btn buttonCancel" (click)="limpar()">LIMPAR</button>
+  </div>
+</div>
+<table class="tabela">
+  <thead class="tabela-cabecalho">
+    <tr>
+      <th>Ticker</th>
+      <th>Nome</th>
+      <th>Tipo</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let stock of stocks">
+      <td>{{stock.ticker}}</td>
+      <td>{{stock.name}}</td>
+      <td>{{stock.stockType}}</td>
+      <td><button class="btn buttonOK" (click)="editaStock(stock.id)">EDITAR</button></td>
+      <td><button class="btn buttonCancel" (click)="apagaStock(stock.id)">APAGAR</button></td>
+    </tr>
+</tbody>
+</table>

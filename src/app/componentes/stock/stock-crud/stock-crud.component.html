@@ -1,0 +1,18 @@
+<p class="titulo">Ações disponíveis</p>
+
+<div>
+  <button class="btn buttonOK"
+          (click)="novaAcao()">
+    NOVA
+  </button>
+</div>
+<app-stock-form
+  stockId={{idStockEdit}}
+  (clicarSalvar)='refreshList()'>
+</app-stock-form>
+
+<app-stock-list
+  id="listaStock"
+  atualizarLista={{this.atualizarLista}}
+  (clicarEditar) = 'ativaEdicao($event)'>
+</app-stock-list>
